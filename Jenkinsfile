@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                xcodebuild -version
+                // Execute the xcodebuild command
+                sh 'xcodebuild -version'
             }
         }
 
